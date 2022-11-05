@@ -10,7 +10,6 @@ export const Phonebook = () => {
     JSON.parse(localStorage.getItem('contacts')) ?? []
   );
   const [filter, setFilter] = useState('');
-  console.log(contacts);
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
